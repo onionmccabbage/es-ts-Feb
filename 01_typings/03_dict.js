@@ -9,7 +9,7 @@ var octi;
     octi["vulgaris"] = "Vulgaris";
     octi["loligo"] = "Loligo";
 })(octi || (octi = {}));
-const dict = {}; // we have an empty Celaphopod dictionary object
+const dict = {}; // we have an empty cephalopod dictionary object
 // add some members
 dict[octi.vulgaris] = { hasInk: true, arms: 8, tentacles: 0 };
 dict[octi.loligo] = { hasInk: true, arms: 8, tentacles: 2 };

@@ -8,20 +8,20 @@ const fn = ()=>{}
 
 // depends on settings in tsconfig.json
 
-interface Celaphopod {
+interface Cephalopod {
     hasInk    : boolean
     arms      : number
     tentacles : number
 }
 
 // and here is a dictionary - it is an interface with name:value structure
-interface CelaphopodDict {
-    [species:string] : Celaphopod
+interface CephalopodDict {
+    [species:string] : Cephalopod
 }
 
 // exercise the code
 enum octi {vulgaris='Vulgaris', loligo='Loligo'}
-const dict:CelaphopodDict = {} // we have an empty Celaphopod dictionary object
+const dict:CephalopodDict = {} // we have an empty cephalopod dictionary object
 // add some members
 dict[octi.vulgaris] = {hasInk:true, arms:8, tentacles:0}
 dict[octi.loligo]   = {hasInk:true, arms:8, tentacles:2}
