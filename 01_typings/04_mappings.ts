@@ -35,6 +35,20 @@ namespace Options_Terse {
     type Optional = OptionalOptions<Options>
     type Nullable = NullableOptions<Options>
 
+    // make use of our mapped types
+    const brick:ReadOnly = {
+        backlight:false,
+        material:'brick'
+    }
+    // brick.material = 'changed' // nope
+    const gauze:Nullable = {
+        material:'gauze',
+        backlight:true
+    }
+    gauze.backlight = null // yep
 
-    
+    const silk:Optional = {
+        backlight:true
+    }
+
 }
