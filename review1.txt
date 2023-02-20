@@ -1,5 +1,5 @@
 Review Exercise 1 about 40 mins (then show-and-tell)
-=================
+================= we will conclude this at about 2:20 ish
 This is a chance to work with TypeScript/ECMAScript in a mini project
 Tackle this however you like, the point is for you to explore using the tools
 You will load up some data into a type-safe structure, then (optionaly) sort the data and show slices of it
