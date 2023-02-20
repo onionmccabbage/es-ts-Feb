@@ -1,43 +1,46 @@
 ECMAScript and Typescript
 =========================
 
-Toby Dussek  November 2-4
+Toby Dussek  Feb 20-22
 
 9:30  start
 11:00 coffee
-12:30 lunch
+12:30 lunch until 1:30
 3:00  tea
 4:30  end
 
-Code repo: 
+code repo: https://github.com/onionmccabbage/es-ts-Feb
+(its in the chat)
+
 
 Monday
-- welcome and tech check
-- choose a folder to work in: install NodeJS/npm then install typescript globaly
+> welcome and tech check
+> choose a folder to work in: install NodeJS/npm then install typescript globaly
   - npm install -g typescript
   - npm install -g ts-node
   - may need to npm install types for (e.g.) @angular or @react or custom...
-- Modern ECMAScript
+> Modern ECMAScript
    - common name JavaScript
    - also known as ECMAScript, ES, ES3, ES5, ES6 etc
    - sometimes referred to as ESNext, ES6+
    - recently ES2021, ES2022... (these are all names for JavaScript)
-- TS is DEVELOPMENT TIME ONLY - it NEVER makes it to the end user
-- sometimes it complains 'cannot find console...' - fix with ts-config DOM
-- Typescript why and how
-- using class and interface for types
+> TS is DEVELOPMENT TIME ONLY - it NEVER makes it to the end user
+> sometimes it complains 'cannot find console...' - fix with ts-config DOM
+> Typescript why and how
+> using class and interface for types
 - best pactice: declare types/interfaces in another module and import that
 - default ts output is ES3, we can --target es2022 (or relevant version)
 - tidy way to see html pages - liveserver (and web browser events)
-- support for older browsers etc.
-- number data type
-- classes
-- ways to run and automate
-- try a lab exercise
+> support for older browsers etc.
+> number data type
+> functions and types
+> classes
+> ways to run and automate
+> try a lab exercise
 
 Tuesday
 - brief review so far
-- install coderunner extention - lets us run ts directly
+> install coderunner extention - lets us run ts directly
 - many ways to write functions
 - generics Array<T>
 - begin looking at data sources: JSON etc
@@ -51,7 +54,7 @@ Tuesday
 - Promises
 - we can specify more than one generic type as <a, b>
 - conventions, best practice, preference...
-- type guards - simply use logical 'if' when we need to ensure types manually
+> type guards - simply use logical 'if' when we need to ensure types manually
 - more on tsconfig: see the docs on tsconfig 
 - review exercise
 
