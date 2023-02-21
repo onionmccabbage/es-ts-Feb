@@ -1,5 +1,6 @@
 Review Exercise 2
 =================
+(use 'liveserver' or 'npx http-server' to run the html page)
 
 Interpret however you like - individual or teamwork, show-and-tell after
 
