@@ -26,9 +26,9 @@ Monday
 > sometimes it complains 'cannot find console...' - fix with ts-config DOM
 > Typescript why and how
 > using class and interface for types
-- best pactice: declare types/interfaces in another module and import that
-- default ts output is ES3, we can --target es2022 (or relevant version)
-- tidy way to see html pages - liveserver (and web browser events)
+> best pactice: declare types/interfaces in another module and import that
+> default ts output is ES3, we can --target es2022 (or relevant version)
+> tidy way to see html pages - liveserver (and web browser events)
 > support for older browsers etc.
 > number data type
 > functions and types
@@ -52,7 +52,7 @@ Tuesday
 > we can specify more than one generic type as <a, b>
 - conventions, best practice, preference...
 - many ways to write functions
-- descructuring
+- destructuring
 - generator syntax (must use 'function*')
 > type guards - simply use logical 'if' when we need to ensure types manually
 - more on tsconfig: see the docs on tsconfig 

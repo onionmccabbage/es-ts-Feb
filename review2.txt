@@ -15,6 +15,7 @@ The available nested routes are:
     /users/1/albums
     /users/1/todos
     /users/1/posts
+NB the '1' here can be any parameter. Also the 'comments' 'photos' 'posts' etc can be a pramater
 
 Ideally, build the URL using back-tick interpolation
 
