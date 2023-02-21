@@ -37,21 +37,23 @@ Monday
 > try a lab exercise
 
 Tuesday
-- brief review so far
+> brief review so far
 > install coderunner extention - lets us run ts directly
-- many ways to write functions
-- generics Array<T>
-- begin looking at data sources: JSON etc
-- descructuring
-- generator syntax (must use 'function*')
+> generics Array<T>
+> importing modules
+> begin looking at data sources: JSON etc
 - is TS mainly just for type safety? No, also has language engine for code completion/introspection
 - types or interface (or hybrid) - mainly aim for interface, then derive other types
 - when/why you would use an Enum, Literal, tuple, Type, Interface 
   (how to choose one over another depending on what you are doing)
 - https://webpack.js.org/guides/typescript/
-- Promises
-- we can specify more than one generic type as <a, b>
+> Promises
+> fetch and async-await
+> we can specify more than one generic type as <a, b>
 - conventions, best practice, preference...
+- many ways to write functions
+- descructuring
+- generator syntax (must use 'function*')
 > type guards - simply use logical 'if' when we need to ensure types manually
 - more on tsconfig: see the docs on tsconfig 
 - review exercise
@@ -59,6 +61,7 @@ Tuesday
 Wednesday
 - npm init (and webpack)
 - Brief overview of ReactJS (and the ReactJS Typescript template)
+  "moduleResolution": "Node",
 - interface, class, implements, extends....
 - more on classes
 - more on modules and import (module.exports, type='module' old-skool commonJS etc.)
