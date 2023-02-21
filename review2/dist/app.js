@@ -31,14 +31,17 @@ export const getListOfPhotos = (photos) => {
         .join("\n");
     return `<ul>${titles}</ul>`;
 };
-// use the code to get all users    
+// use the code to get all users (users is the default category)
 fetchFromAPI()
+    // careful - how can we be sure it will be 'user'?
+    // .then((d: User[] | string) => {
     .then((d) => {
     const output = document.getElementById("output");
     console.log(`promise returned ${d}`);
     // make sure we have an array type
     if (typeof (d) != 'string') {
-        const names = d.map(user => user.name).join("\n");
+        // const names: string = d.map(user => user.name).join("\n");
+        const names = d.map(user => user['name']).join("\n");
         console.log(names);
         // output.innerHTML = names;
         output.innerHTML = listOfUsers(d); // this is pretty
@@ -48,6 +51,6 @@ fetchFromAPI()
 const myURL = `https://jsonplaceholder.typicode.com/photos`;
 const images = document.getElementById("images");
 fetch(myURL)
-    .then((response) => response.json());
-// uncomment the following line to also see all the image data
-// .then((photos) => images.innerHTML = getListOfPhotos(photos));
+    .then((response) => response.json())
+    // uncomment the following line to also see all the image data
+    .then((photos) => images.innerHTML = getListOfPhotos(photos));

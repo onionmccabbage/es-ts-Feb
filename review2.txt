@@ -1,4 +1,4 @@
-Review Exercise 2
+Review Exercise 2 WE ARE ON TEA BREAK UNTIL 3:15
 =================
 (use 'liveserver' or 'npx http-server' to run the html page)
 

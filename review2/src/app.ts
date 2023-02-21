@@ -35,17 +35,20 @@ export const getListOfPhotos = (photos: Photo[]) => {
     return `<ul>${titles}</ul>`
 }
 
-// use the code to get all users    
+// use the code to get all users (users is the default category)
 fetchFromAPI()
-    .then((d: User[] | string) => {
+    // careful - how can we be sure it will be 'user'?
+    // .then((d: User[] | string) => {
+    .then( <T> (d: T[] | string) => {
         const output = document.getElementById("output");
         console.log(`promise returned ${d}`)
         // make sure we have an array type
         if (typeof (d) != 'string') {
-            const names: string = d.map(user => user.name).join("\n");
+            // const names: string = d.map(user => user.name).join("\n");
+            const names: string = d.map(user => user['name']).join("\n");
             console.log(names)
             // output.innerHTML = names;
-            output.innerHTML = listOfUsers(d); // this is pretty
+            output.innerHTML = listOfUsers(d as User[]); // this is pretty
         }
     })
 
@@ -55,4 +58,4 @@ const images: HTMLElement = document.getElementById("images");
 fetch(myURL)
     .then((response) => response.json())
 // uncomment the following line to also see all the image data
-    // .then((photos) => images.innerHTML = getListOfPhotos(photos));
+    .then((photos) => images.innerHTML = getListOfPhotos(photos));
