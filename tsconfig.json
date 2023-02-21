@@ -4,6 +4,8 @@
             "ES2020",
             "DOM"
         ],
-        "target": "ES2022"
+        "target": "ES2022",
+        "moduleResolution": "Node",
+        "resolveJsonModule": true
     }
 }
