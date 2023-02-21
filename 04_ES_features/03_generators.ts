@@ -6,6 +6,7 @@ function* fibon() { // MUST be function* - there is no 'modern' equivalent
     let first=1, second=2
     // here is an ENLESS LOOP
     for (;;) { // for let i=0; i<Number.POSITIVE_INFINITY; i++
+    // for (let i=0;i<3;i++) { // this will be exhausted after three calls
         let sum = first+second
         yield `The next number is ${sum}`
         first = second
