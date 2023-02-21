@@ -13,6 +13,9 @@ const go = (isworking:boolean)=>{
 
 
 // exercise the code
-go(true)
-    .then( (val)=>{console.log(val)} )
+go(false) // true will resolve, false will reject
+    .then( (val)=>{console.log(val)} ) // promises are 'thenable' (chaining)
     .catch( (err)=>{console.log(err)} )
+
+// promises do not block
+console.log('when does this line get executed')
