@@ -56,7 +56,7 @@ Tuesday
 - generator syntax (must use 'function*')
 > type guards - simply use logical 'if' when we need to ensure types manually
 - more on tsconfig: see the docs on tsconfig 
-- review exercise
+> review exercise
 
 Wednesday
 - npm init (and webpack)
