@@ -10,8 +10,6 @@ Toby Dussek  Feb 20-22
 4:30  end
 
 code repo: https://github.com/onionmccabbage/es-ts-Feb
-(its in the chat)
-
 
 Monday
 > welcome and tech check
