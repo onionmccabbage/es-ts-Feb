@@ -39,7 +39,7 @@ const cleanUpUtil = (container:HTMLElement)=>{
 }
 // we can make an observable called keyStream$ - the $ is conventional
 const keyStream$ = fromEvent(searchBox, "keyup")
-// now we use the observable
+// now we subscribe to the observable
 keyStream$.pipe(
     debounceTime(500), // don't bother responding if they enter faster than this
     map( (event)=>{
@@ -50,12 +50,15 @@ keyStream$.pipe(
     map( (query)=>{
         return sendRequest(testData, query)
     } )
-).subscribe( (result)=>{
-    // clean up previous suggestions
-    cleanUpUtil(results)
-    // show latest suggestions
-    appendResults(results, result)
-} )
+    ).subscribe( (result)=>{
+        // clean up previous suggestions
+        cleanUpUtil(results)
+        // show latest suggestions
+        appendResults(results, result)
+    } )
+
+// as many subscribers as we like
+keyStream$.subscribe( ()=>{} )
 
 
 

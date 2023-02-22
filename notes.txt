@@ -42,7 +42,7 @@ Tuesday
 > generics Array<T>
 > importing modules
 > begin looking at data sources: JSON etc
-- is TS mainly just for type safety? No, also has language engine for code completion/introspection
+> is TS mainly just for type safety? No, also has language engine for code completion/introspection
 - types or interface (or hybrid) - mainly aim for interface, then derive other types
 - when/why you would use an Enum, Literal, tuple, Type, Interface 
   (how to choose one over another depending on what you are doing)
@@ -50,25 +50,25 @@ Tuesday
 > Promises
 > fetch and async-await
 > we can specify more than one generic type as <a, b>
-- conventions, best practice, preference...
-- many ways to write functions
-- destructuring
-- generator syntax (must use 'function*')
+> conventions, best practice, preference...
+> many ways to write functions
+> destructuring
+> generator syntax (must use 'function*')
 > type guards - simply use logical 'if' when we need to ensure types manually
-- more on tsconfig: see the docs on tsconfig 
+> more on tsconfig: see the docs on tsconfig 
 > review exercise
 
 Wednesday
-- npm init (and webpack)
-- Brief overview of ReactJS (and the ReactJS Typescript template)
+> npm init (and webpack)
+> Brief overview of ReactJS (and the ReactJS Typescript template)
   "moduleResolution": "Node",
 - interface, class, implements, extends....
 - more on classes
-- more on modules and import (module.exports, type='module' old-skool commonJS etc.)
+> more on modules and import (module.exports, type='module' old-skool commonJS etc.)
 			in html... <script module></script>
-- Observables and RxJS - lifecycle
+> Observables and RxJS - lifecycle
   see https://rxjs.dev/guide/overview and https://rxmarbles.com/
-- Array<T> and T[] are identical - it's a style choice
+> Array<T> and T[] are identical - it's a style choice
 - final lab
 - where to go next 
   https://www.typescriptlang.org/docs/handbook/migrating-from-javascript.html
