@@ -62,6 +62,11 @@ Wednesday
 > npm init (and webpack)
 > Brief overview of ReactJS (and the ReactJS Typescript template)
   "moduleResolution": "Node",
+- React with Typescript generics
+  Be careful, you will nee a trailing comma:
+     const fn = async <T,>(): Promise< Array<T> >=>{}
+  https://devtrium.com/posts/react-typescript-using-generics-in-react
+
 - interface, class, implements, extends....
 - more on classes
 > more on modules and import (module.exports, type='module' old-skool commonJS etc.)
