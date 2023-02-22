@@ -73,4 +73,5 @@ Wednesday
 - where to go next 
   https://www.typescriptlang.org/docs/handbook/migrating-from-javascript.html
 - end of course feedback
+	https://frameworktraining.typeform.com/to/mO4reGWw
 
