@@ -50,10 +50,7 @@ keyStream$.pipe(
     map( (query)=>{
         return sendRequest(testData, query)
     } )
-)
-
-// elsewhere we can subscribe as many times as we like
-keyStream$.subscribe( (result)=>{
+).subscribe( (result)=>{
     // clean up previous suggestions
     cleanUpUtil(results)
     // show latest suggestions
