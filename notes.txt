@@ -43,10 +43,10 @@ Tuesday
 > importing modules
 > begin looking at data sources: JSON etc
 > is TS mainly just for type safety? No, also has language engine for code completion/introspection
-- types or interface (or hybrid) - mainly aim for interface, then derive other types
-- when/why you would use an Enum, Literal, tuple, Type, Interface 
+> types or interface (or hybrid) - mainly aim for interface, then derive other types
+> when/why you would use an Enum, Literal, tuple, Type, Interface 
   (how to choose one over another depending on what you are doing)
-- https://webpack.js.org/guides/typescript/
+> https://webpack.js.org/guides/typescript/
 > Promises
 > fetch and async-await
 > we can specify more than one generic type as <a, b>
@@ -62,11 +62,10 @@ Wednesday
 > npm init (and webpack)
 > Brief overview of ReactJS (and the ReactJS Typescript template)
   "moduleResolution": "Node",
-- React with Typescript generics
-  Be careful, you will nee a trailing comma:
+> React with Typescript generics
+  Be careful, you will need a trailing comma:
      const fn = async <T,>(): Promise< Array<T> >=>{}
   https://devtrium.com/posts/react-typescript-using-generics-in-react
-
 - interface, class, implements, extends....
 - more on classes
 > more on modules and import (module.exports, type='module' old-skool commonJS etc.)
@@ -74,7 +73,7 @@ Wednesday
 > Observables and RxJS - lifecycle
   see https://rxjs.dev/guide/overview and https://rxmarbles.com/
 > Array<T> and T[] are identical - it's a style choice
-- final lab
+> final lab
 - where to go next 
   https://www.typescriptlang.org/docs/handbook/migrating-from-javascript.html
 - end of course feedback

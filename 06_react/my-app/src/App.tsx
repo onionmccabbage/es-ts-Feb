@@ -37,6 +37,7 @@ export interface Photo {
   thumbnailUrl : string
 }
 
+// see https://devtrium.com/posts/react-typescript-using-generics-in-react
 const fetchUsers = async <T,>(): Promise< Array<T> | string | undefined >=>{ 
   // const fetchUsers = async (): Promise< Array<Photo> | string | undefined >=>{ 
     const API = `https://jsonplaceholder.typicode.com/users`
